@@ -55,6 +55,7 @@ function parallax() {
   var screen = $(window).height();
   var webpage = $(document).height();
   var percentage = top / (webpage - screen) * 100; 
+
   console.clear();
   console.log("top: " + top + " / (  webpage: " + webpage + " - screen: " + screen + ") = percentage:" + percentage)
 
@@ -72,32 +73,29 @@ function parallax() {
     }
     //$(".intro").css("padding-top", percentage*10 + "vh");
   }
-
-
-
-
-
   if (percentage < filmstop - transition) {
     $(".parallax-bg1,.parallax-bg2a,.parallax-bg2b,.parallax-bg3a,.parallax-bg3b,.artifacts,.timeline,.articles").css("top", "100vh");
     $(".parallax-bg1,.parallax-bg2a,.parallax-bg3a,.parallax-bg2b,.parallax-bg3b").css("background-position", "0 0")
     console.log("before transition")
   } else if ((percentage > filmstop - transition) && (percentage < (filmstop))) {
-    $(".parallax-bg1,.parallax-bg2a,.parallax-bg2b,.parallax-bg3a,.parallax-bg3b,.artifacts,.timeline").css("top", (-(percentage - filmstop) * transition) + "vh")
-    $(".articles").css("top", "100vh");
+    $(".parallax-bg1,.parallax-bg2a,.parallax-bg2b,.parallax-bg3a,.parallax-bg3b,.artifacts,.timeline,.articles").css("top", (-(percentage - filmstop) * transition) + "vh")
     $(".parallax-bg2a,.parallax-bg3a,.parallax-bg2b,.parallax-bg3b").css("background-position", "0 0")
     $(".parallax-bg1").css("background-position", "50% 0")
     console.log(" transition")
   } else if (percentage > filmstop) {
+    var speedofrock = (percentage-filmstop)*(100/(100-filmstop))*36.9; //This is 0-100 from the point where the transition stops
+
     $(".parallax-bg1,.parallax-bg2a,.parallax-bg2b,.parallax-bg3a,.parallax-bg3b,.articles").css("top", "0vh")
-    $(".parallax-bg1").css("background-position", "50% " + -(percentage - filmstop) + "vh");
-    $(".parallax-bg2a").css("background-position", "100% " + -(percentage - filmstop) * 2 + "vh");    //B R
-    $(".parallax-bg2b").css("background-position", "0 " + -(percentage - filmstop) * 2 + "vh");       //B L
-    $(".parallax-bg3a").css("background-position", "100% " + -(percentage - filmstop) * 4 + "vh");    //F L
-    $(".parallax-bg3b").css("background-position", "0 " + -(percentage - filmstop) * 4 + "vh");       //F R
+    $(".parallax-bg1").css("background-position", "50% " + -speedofrock + "px"); //The image is 3690px tall, and I want to scroll it up to the point where it's finished at 100%
+
+    $(".parallax-bg2a").css("background-position", "100% " + -speedofrock * 2 + "px");    //B R
+    $(".parallax-bg2b").css("background-position", "0 " + -speedofrock  * 2+ "px");       //B L
+    $(".parallax-bg3a").css("background-position", "100% " + -speedofrock  * 3+ "px");    //F L
+    $(".parallax-bg3b").css("background-position", "0 " + -speedofrock  * 3+ "px");       //F R
     
-    $(".artifacts").css("top", -(percentage - filmstop) + "vh");
-    $(".timeline").css("top", -(percentage -  filmstop) + "vh");
-    $(".articles").css("top", (-(percentage - filmstop) * transition)+100 + "vh");
+    $(".artifacts").css("top", -speedofrock + "px");
+    $(".timeline").css("top", -speedofrock + "px");
+    $(".articles").css("top", -speedofrock + "px");
 
     
     $('.frame-' + filmlength).removeClass("invis");

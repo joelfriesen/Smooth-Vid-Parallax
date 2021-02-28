@@ -12,6 +12,11 @@ body {
   vertical-align: baseline;
   line-height: 1.5em; }
 
+.content {
+  position: relative;
+  overflow: hidden;
+  z-index: 2; }
+
 .intro {
   position: relative;
   overflow: hidden;
@@ -22,8 +27,7 @@ body {
   line-height: 1.5;
   box-sizing: content-box;
   font-size: 1.2em;
-  margin: 0 auto;
-  z-index: 1000; }
+  margin: 0 auto; }
   @media screen and (min-width: 600px) {
     .intro h1 {
       max-width: 600px;
@@ -144,14 +148,25 @@ body {
 /****************************************************************\
 *** Chapters ****************************************************
 \****************************************************************/
+#layer1,
+#layer2,
+#layer3,
+#layer4,
+#layer5,
+#layer6 {
+  width: 350px;
+  display: block;
+  position: relative; }
+
 .articles {
-  position: relative;
+  position: fixed;
   margin: 0;
   overflow: hidden;
   display: block;
   width: 100%; }
   .articles article {
     position: relative;
+    margin: 60px 0;
     width: 300px;
     color: #fff;
     padding: 20px 20px 100px 20px;
@@ -192,19 +207,6 @@ body {
     box-sizing: border-box;
     margin-left: 10%;
     margin-right: 10%; } }
-
-#layer1,
-#layer2,
-#layer3,
-#layer4,
-#layer5,
-#layer6 {
-  padding-top: 70px;
-  margin-top: 100vh;
-  top: 2600px;
-  width: 350px;
-  display: block;
-  position: relative; }
 
 /****************************************************************\
 *** Diagram numbers  *********************************************
@@ -248,9 +250,9 @@ body {
     z-index: 4;
     position: fixed;
     width: 100%;
-    max-width: 1800px;
+    max-width: 1400px;
     left: 50%;
-    margin: 0 0 0 -900px;
+    margin: 0 0 0 -550px;
     color: #fff;
     pointer-events: none; }
     .timeline li {
@@ -285,11 +287,10 @@ body {
   margin: 0 auto;
   display: block;
   box-sizing: content-box;
-  z-index: 100;
+  z-index: 10;
   position: fixed;
   left: 50%;
   margin: 0;
-  margin-left: -600px;
   pointer-events: none;
   /****************************************************************\
   *** Info popup ***************************************************
@@ -298,7 +299,7 @@ body {
   *** Modal Boxes **************************************************
   \****************************************************************/ }
   .artifacts .artifact {
-    z-index: 1000; }
+    z-index: 10; }
   .artifacts input {
     display: none; }
   .artifacts label {
@@ -555,7 +556,7 @@ body {
 
 .footer {
   position: relative;
-  overflow: hidden;
+  height: 100vh;
   background: #000;
   text-align: center;
   color: #fff;
