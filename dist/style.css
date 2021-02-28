@@ -91,15 +91,13 @@ body {
 
 .hole {
   margin: 0;
-  overflow: hidden;
   display: block;
   width: 100%;
   position: relative;
+  height: 3690px;
   /****************************************************************\
 *** Parallax ****************************************************
 \****************************************************************/ }
-  .hole .artifacts, .hole .timeline {
-    position: absolute; }
   .hole .parallax-bg3a,
   .hole .parallax-bg3b,
   .hole .parallax-bg2b,
@@ -113,30 +111,34 @@ body {
     height: 3690px; }
   .hole .parallax-bg1 {
     z-index: 1;
-    width: 50vw;
-    margin-left: 25vw;
+    width: 100vw;
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/scaled.jpg);
     background-repeat: no-repeat;
-    background-position: top right; }
+    background-position: top right;
+    background-color: #000; }
   .hole .parallax-bg2b {
     z-index: 4;
-    left: 0;
     width: 300px;
+    left: 50%;
+    margin: 0 0 0 -730px;
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/wallleft.png?w456456); }
   .hole .parallax-bg2a {
     z-index: 2;
-    right: 0;
     width: 300px;
+    left: 50%;
+    margin: 0 0 0 430px;
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/wallright.png?345345); }
   .hole .parallax-bg3a {
     z-index: 5;
-    left: 0;
     width: 200px;
+    left: 50%;
+    margin: 0 0 0 -750px;
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/walllefttop.png?65745); }
   .hole .parallax-bg3b {
     z-index: 3;
-    right: 0;
+    left: 50%;
     width: 200px;
+    margin: 0 0 0 550px;
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/wallrighttop.png?4234134); }
 
 /****************************************************************\
@@ -247,13 +249,14 @@ body {
     position: fixed;
     width: 100%;
     max-width: 1800px;
-    margin: 0 auto;
+    left: 50%;
+    margin: 0 0 0 -900px;
     color: #fff;
     pointer-events: none; }
     .timeline li {
       margin: 0 0 150px 100%;
       float: right;
-      border-bottom: 1px dashed rgba(255, 255, 255, 0.6);
+      border-top: 1px dashed rgba(255, 255, 255, 0.6);
       height: 10px;
       background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
       color: #fff;
@@ -265,8 +268,8 @@ body {
       .timeline li img {
         width: 100px;
         position: absolute;
-        right: 20px;
-        top: -100px; }
+        right: -0;
+        top: 2em; }
     .timeline li:last-of-type {
       margin-bottom: 590px; } }
 
@@ -339,32 +342,32 @@ body {
     filter: drop-shadow(0px 0px 10px white); }
   .artifacts label.artifact1 {
     left: 50%;
-    top: 1010px;
+    top: 10px;
     width: 400px;
     transform: translate(-50%, 0); }
   .artifacts label.artifact2 {
     left: 50%;
-    top: 1310px;
+    top: 310px;
     width: 400px;
     transform: translate(-50%, 0); }
   .artifacts label.artifact3 {
     left: 50%;
-    top: 1600px;
+    top: 600px;
     width: 350px;
     transform: translate(-50%, 0); }
   .artifacts label.artifact4 {
     left: 50%;
-    top: 2000px;
+    top: 1000px;
     width: 400px;
     transform: translate(-50%, 0); }
   .artifacts label.artifact5 {
     left: 50%;
-    top: 2500px;
+    top: 1500px;
     width: 400px;
     transform: translate(-50%, 0); }
   .artifacts label.artifact6 {
     left: 50%;
-    top: 3000px;
+    top: 2000px;
     width: 350px;
     transform: translate(-50%, 0); }
   @media screen and (max-width: 600px) {

@@ -72,14 +72,21 @@ function parallax() {
     }
     //$(".intro").css("padding-top", percentage*10 + "vh");
   }
+
+
+
+
+
   if (percentage < filmstop - transition) {
     $(".parallax-bg1,.parallax-bg2a,.parallax-bg2b,.parallax-bg3a,.parallax-bg3b,.artifacts,.timeline,.articles").css("top", "100vh");
     $(".parallax-bg1,.parallax-bg2a,.parallax-bg3a,.parallax-bg2b,.parallax-bg3b").css("background-position", "0 0")
+    console.log("before transition")
   } else if ((percentage > filmstop - transition) && (percentage < (filmstop))) {
     $(".parallax-bg1,.parallax-bg2a,.parallax-bg2b,.parallax-bg3a,.parallax-bg3b,.artifacts,.timeline").css("top", (-(percentage - filmstop) * transition) + "vh")
     $(".articles").css("top", "100vh");
     $(".parallax-bg2a,.parallax-bg3a,.parallax-bg2b,.parallax-bg3b").css("background-position", "0 0")
     $(".parallax-bg1").css("background-position", "50% 0")
+    console.log(" transition")
   } else if (percentage > filmstop) {
     $(".parallax-bg1,.parallax-bg2a,.parallax-bg2b,.parallax-bg3a,.parallax-bg3b,.articles").css("top", "0vh")
     $(".parallax-bg1").css("background-position", "50% " + -(percentage - filmstop) + "vh");
@@ -91,8 +98,9 @@ function parallax() {
     $(".artifacts").css("top", -(percentage - filmstop) + "vh");
     $(".timeline").css("top", -(percentage -  filmstop) + "vh");
     $(".articles").css("top", (-(percentage - filmstop) * transition)+100 + "vh");
-    $( "div" ).remove( ".imagescroll" )
+
     
     $('.frame-' + filmlength).removeClass("invis");
+    console.log("after transition")
   }
 }
