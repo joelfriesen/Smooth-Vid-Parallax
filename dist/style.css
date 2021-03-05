@@ -10,16 +10,13 @@ body {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-  line-height: 1.5em; }
-
-.content {
-  position: relative;
-  overflow: hidden;
-  z-index: 2; }
+  line-height: 1.5em;
+  height: 1000vh; }
 
 .intro {
   position: relative;
   overflow: hidden;
+  height: 300vh;
   text-align: center;
   color: #fff;
   font-weight: 300;
@@ -93,80 +90,91 @@ body {
     .intro p {
       margin: 0 0 2rem 0; } }
 
-.hole {
-  margin: 0;
+.content {
+  pointer-events: none;
   display: block;
-  width: 100%;
   position: relative;
-  height: 3690px;
-  /****************************************************************\
-*** Parallax ****************************************************
-\****************************************************************/ }
-  .hole .parallax-bg3a,
-  .hole .parallax-bg3b,
-  .hole .parallax-bg2b,
-  .hole .parallax-bg2a,
-  .hole .parallax-bg1 {
-    position: fixed;
-    margin: 0 0 0 0;
-    top: 0px;
-    background-repeat: repeat-y;
-    pointer-events: none;
-    height: 3690px; }
-  .hole .parallax-bg1 {
-    z-index: 1;
-    width: 100vw;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/scaled.jpg);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-color: #000; }
-  .hole .parallax-bg2b {
-    z-index: 4;
-    width: 300px;
-    left: 50%;
-    margin: 0 0 0 -730px;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/wallleft.png?w456456); }
-  .hole .parallax-bg2a {
-    z-index: 2;
-    width: 300px;
-    left: 50%;
-    margin: 0 0 0 430px;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/wallright.png?345345); }
-  .hole .parallax-bg3a {
-    z-index: 5;
-    width: 200px;
-    left: 50%;
-    margin: 0 0 0 -750px;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/walllefttop.png?65745); }
-  .hole .parallax-bg3b {
-    z-index: 3;
-    left: 50%;
-    width: 200px;
-    margin: 0 0 0 550px;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/wallrighttop.png?4234134); }
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 11; }
+
+.hole {
+  display: block;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  top: 100vh; }
 
 /****************************************************************\
-*** Chapters ****************************************************
+*** Parallax ****************************************************
 \****************************************************************/
-#layer1,
-#layer2,
-#layer3,
-#layer4,
-#layer5,
-#layer6 {
-  width: 350px;
-  display: block;
-  position: relative; }
-
-.articles {
+.hole .parallax-bg3a,
+.hole .parallax-bg3b,
+.hole .parallax-bg2b,
+.hole .parallax-bg2a,
+.hole .parallax-bg1 {
   position: fixed;
+  margin: 0 0 0 0;
+  top: 0px;
+  background-repeat: repeat-y;
+  pointer-events: none;
+  height: 3690px; }
+
+.hole .parallax-bg1 {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  background-image: url(scaled.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-color: #000; }
+
+.hole .parallax-bg2b {
+  z-index: 4;
+  width: 300px;
+  left: 50%;
+  margin: 0 0 0 -730px;
+  background-image: url(wallleft.png?w456456); }
+
+.hole .parallax-bg2a {
+  z-index: 2;
+  width: 300px;
+  left: 50%;
+  margin: 0 0 0 430px;
+  background-image: url(wallright.png?345345); }
+
+.hole .parallax-bg3a {
+  z-index: 5;
+  width: 200px;
+  left: 50%;
+  margin: 0 0 0 -750px;
+  background-image: url(walllefttop.png?65745); }
+
+.hole .parallax-bg3b {
+  z-index: 3;
+  left: 50%;
+  width: 200px;
+  margin: 0 0 0 550px;
+  background-image: url(wallrighttop.png?4234134); }
+
+/****************************************************************\
+*** Articles ****************************************************
+\****************************************************************/
+.articles {
+  height: 700vh;
+  position: relative;
   margin: 0;
   overflow: hidden;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%; }
   .articles article {
     position: relative;
-    margin: 60px 0;
+    margin: 0 10vh 1vh;
     width: 300px;
     color: #fff;
     padding: 20px 20px 100px 20px;
@@ -248,11 +256,10 @@ body {
 @media screen and (min-width: 600px) {
   .timeline {
     z-index: 4;
+    right: 0;
     position: fixed;
-    width: 100%;
-    max-width: 1400px;
-    left: 50%;
-    margin: 0 0 0 -550px;
+    width: 60vw;
+    margin: 0 10vh 0 0;
     color: #fff;
     pointer-events: none; }
     .timeline li {
@@ -260,7 +267,7 @@ body {
       float: right;
       border-top: 1px dashed rgba(255, 255, 255, 0.6);
       height: 10px;
-      background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+      background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
       color: #fff;
       position: relative;
       width: 100%;
@@ -309,7 +316,7 @@ body {
     background-repeat: no-repeat;
     font-weight: 100;
     letter-spacing: 0.03em;
-    line-height: 1.5;
+    line-height: 1.5em;
     display: inline-block;
     position: absolute;
     margin: 0;
@@ -343,32 +350,32 @@ body {
     filter: drop-shadow(0px 0px 10px white); }
   .artifacts label.artifact1 {
     left: 50%;
-    top: 10px;
+    top: 1000px;
     width: 400px;
     transform: translate(-50%, 0); }
   .artifacts label.artifact2 {
     left: 50%;
-    top: 310px;
+    top: 1310px;
     width: 400px;
     transform: translate(-50%, 0); }
   .artifacts label.artifact3 {
     left: 50%;
-    top: 600px;
+    top: 1500px;
     width: 350px;
     transform: translate(-50%, 0); }
   .artifacts label.artifact4 {
     left: 50%;
-    top: 1000px;
+    top: 1900px;
     width: 400px;
     transform: translate(-50%, 0); }
   .artifacts label.artifact5 {
     left: 50%;
-    top: 1500px;
+    top: 2300px;
     width: 400px;
     transform: translate(-50%, 0); }
   .artifacts label.artifact6 {
     left: 50%;
-    top: 2000px;
+    top: 2850px;
     width: 350px;
     transform: translate(-50%, 0); }
   @media screen and (max-width: 600px) {
@@ -440,7 +447,7 @@ body {
     top: 25px;
     right: 25px;
     display: block;
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/Close-X-gy.png);
+    background-image: url(Close-X-gy.png);
     background-color: #f3f1ed;
     background-size: 60%;
     background-position: center;
@@ -557,6 +564,7 @@ body {
 .footer {
   position: relative;
   height: 100vh;
+  bottom: 100vh;
   background: #000;
   text-align: center;
   color: #fff;
