@@ -1,0 +1,1021 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(https://fonts.googleapis.com/css?family=Average);
+body {
+  background: #000;
+  font-family: 'Average';
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  line-height: 1.5em;
+}
+
+a:not([name]) {
+  color: #f3f1c8;
+  text-decoration: none;
+}
+
+a:not([name]):hover,
+a:not([name]):focus {
+  color: adjust-hue #f3f1c8, 50%;
+  text-decoration: underline;
+}
+
+sup {
+  font-size: small;
+}
+
+.intro {
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;
+  background: #000;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  box-sizing: content-box;
+  font-size: 1.2em;
+  margin: 0 auto;
+  z-index: 1000;
+}
+@media screen and (min-width: 600px) {
+  .intro h1 {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 120px;
+    color: #fff;
+    padding: 40px 0 0 0;
+    letter-spacing: -3px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 130px;
+    text-shadow: 2px 2px 0 #080808, 3px 3px 0 rgba(243, 241, 237, 0.5), 4px 4px 0 rgba(243, 241, 237, 0.5), 0 0 25px rgba(243, 241, 237, 0.5);
+  }
+  .intro h1 span.small {
+    font-size: 40px;
+    margin-left: 0;
+    position: absolute;
+  }
+  .intro h1 span.large {
+    font-size: 180px;
+    margin: 0 0 0 -60px;
+  }
+  .intro h2 {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    letter-spacing: 3px;
+    font-weight: 500;
+  }
+  .intro article {
+    max-width: 600px;
+    columns: 2;
+    width: 80%;
+    margin: 2em auto 5em;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  .intro h1 {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 60px;
+    color: #fff;
+    padding: 40px 0;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 60px;
+    text-shadow: 2px 2px 0 #080808, 3px 3px 0 rgba(243, 241, 237, 0.5), 4px 4px 0 rgba(243, 241, 237, 0.5), 0 0 25px rgba(243, 241, 237, 0.5);
+  }
+  .intro h2 {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    letter-spacing: 3px;
+    font-weight: 500;
+  }
+  .intro article {
+    width: 90%;
+    columns: 1;
+    margin: 2em auto 5em;
+    text-align: left;
+  }
+  .intro p {
+    margin: 0 0 2rem 0;
+  }
+}
+
+.byline {
+  font-family: 'Fjalla One', sans-serif;
+  font-style: italic;
+  font-size: .8rem;
+}
+.byline span {
+  font-size: 0.5rem;
+}
+
+.scene {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9000;
+}
+
+.viewer {
+  height: 75vw;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url(https://www.hakaimagazine.com/wp-content/uploads/earthflyover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  display: inline-block;
+  float: left;
+}
+
+.viewer.frame1 {
+  background-position: 5.4054054054% 50%;
+}
+
+.viewer.frame2 {
+  background-position: 10.8108108108% 50%;
+}
+
+.viewer.frame3 {
+  background-position: 16.2162162162% 50%;
+}
+
+.viewer.frame4 {
+  background-position: 21.6216216216% 50%;
+}
+
+.viewer.frame5 {
+  background-position: 27.027027027% 50%;
+}
+
+.viewer.frame6 {
+  background-position: 32.4324324324% 50%;
+}
+
+.viewer.frame7 {
+  background-position: 37.8378378378% 50%;
+}
+
+.viewer.frame8 {
+  background-position: 43.2432432432% 50%;
+}
+
+.viewer.frame9 {
+  background-position: 48.6486486486% 50%;
+}
+
+.viewer.frame10 {
+  background-position: 54.0540540541% 50%;
+}
+
+.viewer.frame11 {
+  background-position: 59.4594594595% 50%;
+}
+
+.viewer.frame12 {
+  background-position: 64.8648648649% 50%;
+}
+
+.viewer.frame13 {
+  background-position: 70.2702702703% 50%;
+}
+
+.viewer.frame14 {
+  background-position: 75.6756756757% 50%;
+}
+
+.viewer.frame15 {
+  background-position: 81.0810810811% 50%;
+}
+
+.viewer.frame16 {
+  background-position: 86.4864864865% 50%;
+}
+
+.viewer.frame17 {
+  background-position: 91.8918918919% 50%;
+}
+
+.viewer.frame18 {
+  background-position: 97.2972972973% 50%;
+}
+
+.viewer.frame19 {
+  background-position: 102.7027027027% 50%;
+}
+
+.viewer.frame20 {
+  background-position: 108.1081081081% 50%;
+}
+
+.viewer.frame21 {
+  background-position: 113.5135135135% 50%;
+}
+
+.viewer.frame22 {
+  background-position: 118.9189189189% 50%;
+}
+
+.viewer.frame23 {
+  background-position: 124.3243243243% 50%;
+}
+
+.viewer.frame24 {
+  background-position: 129.7297297297% 50%;
+}
+
+.viewer.frame25 {
+  background-position: 135.1351351351% 50%;
+}
+
+.viewer.frame26 {
+  background-position: 140.5405405405% 50%;
+}
+
+.viewer.frame27 {
+  background-position: 145.9459459459% 50%;
+}
+
+.viewer.frame28 {
+  background-position: 151.3513513514% 50%;
+}
+
+.viewer.frame29 {
+  background-position: 156.7567567568% 50%;
+}
+
+.viewer.frame30 {
+  background-position: 162.1621621622% 50%;
+}
+
+.viewer.frame31 {
+  background-position: 167.5675675676% 50%;
+}
+
+.viewer.frame32 {
+  background-position: 172.972972973% 50%;
+}
+
+.viewer.frame33 {
+  background-position: 178.3783783784% 50%;
+}
+
+.viewer.frame34 {
+  background-position: 183.7837837838% 50%;
+}
+
+.viewer.frame35 {
+  background-position: 189.1891891892% 50%;
+}
+
+.viewer.frame36 {
+  background-position: 194.5945945946% 50%;
+}
+
+.viewer.frame37 {
+  background-position: 200% 50%;
+}
+
+.viewer.frame38 {
+  background-position: 205.4054054054% 50%;
+}
+
+.scrollmagic-pin-spacer {
+  background: #000;
+  z-index: 900;
+}
+
+.holeandheadline {
+  margin: 0;
+  overflow: hidden;
+  background: #a7a5a6;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: black;
+}
+
+#hole {
+  position: relative;
+}
+
+.headline {
+  width: 100%;
+  min-height: 56.25vw;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/head_back.jpg) #fff;
+  background-size: cover;
+  background-position: bottom;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1000;
+  text-align: center;
+  padding: 0;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(89%, black), color-stop(100%, rgba(0, 0, 0, 0)));
+}
+
+.headline h4 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 40px;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 3px;
+  font-weight: 500;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #080808, 3px 3px 0 rgba(243, 241, 237, 0.5), 4px 4px 0 rgba(243, 241, 237, 0.5), 0 0 25px rgba(243, 241, 237, 0.5);
+}
+
+/****************************************************************\
+*** Chapters  ****************************************************
+\****************************************************************/
+.container {
+  position: relative;
+  max-width: 1800px;
+  padding: 0;
+  margin: 0 auto;
+  pointer-events: none;
+}
+.container a {
+  pointer-events: all;
+}
+
+#hole article {
+  width: 300px;
+  color: #fff;
+  padding: 20px 20px 100px 20px;
+  background: rgba(73, 73, 72, 0.8);
+  position: absolute;
+  pointer-events: all;
+  z-index: 101;
+}
+
+@media screen and (max-width: 600px) {
+  #hole article {
+    width: 80%;
+    box-sizing: border-box;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+#hole article h1 {
+  margin: 0 0 25px 0;
+  font-size: 60px;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  line-height: 65px;
+  color: #fff;
+}
+
+#hole article img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+#layer1,
+#layer2,
+#layer3,
+#layer4,
+#layer5,
+#layer6 {
+  padding-top: 70px;
+  margin-top: 100px;
+}
+
+#layer1 {
+  margin-top: 0px;
+}
+
+#layer2 {
+  margin-top: 3000px;
+}
+
+#layer3 {
+  margin-top: 5000px;
+}
+
+#layer4 {
+  margin-top: 7000px;
+}
+
+#layer5 {
+  margin-top: 9000px;
+}
+
+#layer6 {
+  margin-top: 10500px;
+}
+
+/****************************************************************\
+*** Diagram numbers  *********************************************
+\****************************************************************/
+.number,
+.numbertwodig {
+  color: #b6aa91;
+  padding: 2px 7px;
+  margin: 0 3px;
+  display: inline;
+  background: #f3f1ed;
+  border-radius: 50%;
+  border: 2px solid #b6aa91;
+  font-weight: 100;
+  text-align: center;
+}
+
+.artifacts .number,
+.artifacts .numbertwodig {
+  position: absolute;
+  color: #b6aa91;
+  top: 0px;
+  right: 0px;
+  display: block;
+  background: #f3f1ed;
+  border-radius: 50%;
+  border: 2px solid #b6aa91;
+  font-weight: 100;
+  text-align: center;
+  font-size: 27px;
+  padding: 1px 14px;
+  opacity: 1;
+  transition: all .5s ease-in-out;
+  z-index: 1;
+}
+
+.numbertwodig {
+  padding: 3px 5px;
+}
+
+#hole article a.artifactlink {
+  text-decoration: none;
+  color: #b6aa91;
+  padding: 2px 7px;
+  margin: 0 3px;
+  display: inline;
+  background: #f3f1ed;
+  border-radius: 50%;
+  border: 2px solid #b6aa91;
+  font-weight: 100;
+  text-align: center;
+}
+
+/****************************************************************\
+*** Parallax  ****************************************************
+\****************************************************************/
+#parallax-bg3a {
+  z-index: 5;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  width: 2000px;
+  height: 122000px;
+  margin: 0 0 0 0;
+  margin-left: -1000px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/walllefttop.png?65745);
+  background-repeat: repeat-y;
+  pointer-events: none;
+  background-size: 25%;
+  transition: filter .5s ease-in-out;
+}
+
+#parallax-bg3b {
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  width: 2000px;
+  height: 122000px;
+  margin: 0 0 0 0;
+  margin-left: -1000px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/wallrighttop.png?4234134);
+  background-repeat: repeat-y;
+  background-position: top right;
+  pointer-events: none;
+  background-size: 25%;
+  transition: filter .5s ease-in-out;
+}
+
+#parallax-bg2b {
+  z-index: 4;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  width: 1500px;
+  height: 122000px;
+  margin: 0 0 0 0;
+  margin-left: -750px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/wallleft.png?w456456);
+  background-repeat: repeat-y;
+  pointer-events: none;
+  transition: filter .5s ease-in-out;
+}
+
+#parallax-bg2a {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1500px;
+  height: 122000px;
+  margin: 0 0 0 0;
+  margin-left: -750px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/wallright.png?345345);
+  background-repeat: repeat-y;
+  background-position: top right;
+  pointer-events: none;
+  transition: filter .5s ease-in-out;
+}
+
+#parallax-bg1 {
+  z-index: 1;
+  position: fixed;
+  left: 50%;
+  width: 1200px;
+  height: 3690px;
+  margin: 0;
+  margin-left: -650px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/scaled.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  transition: filter .5s ease-in-out;
+}
+
+/****************************************************************\
+*** Timeline  ****************************************************
+\****************************************************************/
+@media screen and (min-width: 600px) {
+  #timeline {
+    z-index: 4;
+    position: fixed;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    color: #fff;
+    pointer-events: none;
+  }
+  #timeline li {
+    margin: 0 0 150px 100%;
+    float: right;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.6);
+    height: 10px;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    color: #fff;
+    position: relative;
+    width: 100%;
+    line-height: 7px;
+    padding: 20px;
+    text-align: right;
+  }
+  #timeline li img {
+    width: 100px;
+    position: absolute;
+    right: 20px;
+    top: -100px;
+  }
+  #timeline li:last-of-type {
+    margin-bottom: 590px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #timeline {
+    display: none;
+  }
+}
+/****************************************************************\
+*** Artifacts  ***************************************************
+\****************************************************************/
+.artifacts {
+  margin: 0;
+  margin: 0 auto;
+  display: block;
+  box-sizing: content-box;
+  z-index: 100;
+  position: fixed;
+  left: 50%;
+  width: 1200px;
+  height: 3690px;
+  margin: 0;
+  margin-left: -600px;
+  pointer-events: none;
+  /****************************************************************\
+  *** Info popup ***************************************************
+  \****************************************************************/
+  /****************************************************************\
+  *** Modal Boxes **************************************************
+  \****************************************************************/
+}
+.artifacts .artifact {
+  z-index: 1000;
+}
+.artifacts input {
+  display: none;
+}
+.artifacts label {
+  cursor: pointer;
+  background-color: transparent;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  font-weight: 100;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  display: inline-block;
+  position: absolute;
+  transition: all .5s ease-in;
+  margin: 0;
+  padding: 0;
+  pointer-events: all;
+}
+.artifacts label .info {
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  pointer-events: none;
+}
+.artifacts label.hovered {
+  transition: all .5s ease-in-out;
+  overflow: visible;
+  z-index: 9999;
+  transition: all .5s ease-in-out;
+  overflow: visible;
+  z-index: 99999;
+  filter: blur(0);
+}
+.artifacts label.hovered .info {
+  opacity: 1;
+  transition: all .5s ease-in-out;
+  pointer-events: inherit;
+}
+.artifacts label.hovered .number,
+.artifacts label.hovered .numbertwodig {
+  top: -50px;
+  right: -50px;
+  transition: all .5s ease-in-out;
+}
+.artifacts label img {
+  transition: all .5s ease-in-out;
+  transform: scale(1);
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: content-box;
+  max-width: 100%;
+  filter: drop-shadow(0px 20px 20px black);
+}
+.artifacts label.hovered img {
+  opacity: 1;
+  transform: scale(1.5);
+  transition: all .5s ease-in-out;
+  filter: drop-shadow(0px 0px 10px white);
+}
+.artifacts label.artifact1 {
+  left: 50%;
+  top: 1010px;
+  width: 400px;
+  transform: translate(-50%, 0);
+}
+.artifacts label.artifact2 {
+  left: 50%;
+  top: 1310px;
+  width: 400px;
+  transform: translate(-50%, 0);
+}
+.artifacts label.artifact3 {
+  left: 50%;
+  top: 1600px;
+  width: 350px;
+  transform: translate(-50%, 0);
+}
+.artifacts label.artifact4 {
+  left: 50%;
+  top: 2000px;
+  width: 400px;
+  transform: translate(-50%, 0);
+}
+.artifacts label.artifact5 {
+  left: 50%;
+  top: 2500px;
+  width: 400px;
+  transform: translate(-50%, 0);
+}
+.artifacts label.artifact6 {
+  left: 50%;
+  top: 3000px;
+  width: 350px;
+  transform: translate(-50%, 0);
+}
+@media screen and (max-width: 600px) {
+  .artifacts label.artifact1,
+  .artifacts label.artifact2,
+  .artifacts label.artifact3,
+  .artifacts label.artifact4,
+  .artifacts label.artifact5,
+  .artifacts label.artifact6 {
+    width: 20%;
+  }
+}
+.artifacts label.artifact1 .info,
+.artifacts label.artifact2 .info,
+.artifacts label.artifact3 .info,
+.artifacts label.artifact4 .info,
+.artifacts label.artifact5 .info {
+  left: 50%;
+  top: 135%;
+  transform: translate(-50%, 0);
+}
+.artifacts label.artifact6 .info {
+  left: 50%;
+  top: -135%;
+  transform: translate(-50%, 0);
+}
+.artifacts .info h3 span {
+  position: relative;
+  color: #b6aa91;
+  top: 0px;
+  left: 0px;
+  display: inline;
+  background: #f3f1ed;
+  border-radius: 50%;
+  border: 2px solid #b6aa91;
+  font-weight: 100;
+  text-align: center;
+  font-size: 18px;
+  padding: 2px 8px;
+  opacity: 1;
+  transition: all .5s ease-in-out;
+  z-index: 1;
+  margin: 0 10px 0 0;
+}
+.artifacts .info {
+  top: 0px;
+  display: block;
+  position: absolute;
+  background: #f3f1ed;
+  color: rgba(73, 73, 72, 0.8);
+  width: 400px;
+  z-index: 100;
+  padding: 30px 20px 10px 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-width: 1px 0 0 0;
+  transition: all .5s ease-in-out;
+  z-index: 2000;
+}
+.artifacts .info a {
+  color: #0d2992;
+  text-decoration: none;
+}
+.artifacts .info a:hover,
+.artifacts .info a:focus {
+  color: #3d59c2;
+  text-decoration: underline;
+}
+@media screen and (max-width: 600px) {
+  .artifacts .info {
+    width: 100%;
+  }
+}
+.artifacts .info span.close:after {
+  content: "";
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  color: #b6aa91;
+  top: 25px;
+  right: 25px;
+  display: block;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/44969/Close-X-gy.png);
+  background-color: #f3f1ed;
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: .3;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.artifacts .info:hover span.close:after {
+  background-color: #fff;
+  border: 1px solid #0d0b08;
+  opacity: 1;
+  color: #0d0b08;
+}
+.artifacts .info h3 {
+  padding: 6px 0 4px;
+  margin: 0;
+  margin-top: -20px;
+  font-size: 22px;
+  color: #1e5d6f;
+}
+.artifacts .info h4 {
+  padding: 10px 0 0px;
+  margin: 0;
+  color: #28879b;
+}
+.artifacts .info p {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+.artifacts .triangle-isosceles:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  /* value = - border-top-width - border-bottom-width */
+  left: 50px;
+  /* controls horizontal position */
+  border-width: 25px 25px 0;
+  /* vary these values to change the angle of the vertex */
+  border-style: solid;
+  border-color: #f3f1ed transparent;
+  /* reduce the damage in FF3.0 */
+  display: block;
+  width: 0;
+}
+.artifacts .triangle-isosceles.top:after {
+  top: -15px;
+  /* value = - border-top-width - border-bottom-width */
+  right: 50px;
+  /* controls horizontal position */
+  bottom: auto;
+  left: auto;
+  border-width: 0 25px 25px;
+  /* vary these values to change the angle of the vertex */
+  border-color: #f3f1ed transparent;
+}
+.artifacts .triangle-isosceles.left:after {
+  top: 16px;
+  /* controls vertical position */
+  left: -50px;
+  /* value = - border-left-width - border-right-width */
+  bottom: auto;
+  border-width: 25px 50px 25px 0;
+  border-color: transparent #f3f1ed;
+}
+.artifacts .triangle-isosceles.right:after {
+  top: 16px;
+  /* controls vertical position */
+  right: -50px;
+  /* value = - border-left-width - border-right-width */
+  bottom: auto;
+  left: auto;
+  border-width: 25px 0 25px 50px;
+  border-color: transparent #f3f1ed;
+}
+
+/****************************************************************\
+*** Scroll up and down buttons ***********************************
+\****************************************************************/
+.scrollbutton {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.scrollbutton a {
+  display: block;
+  margin: 0 auto 88px auto;
+  color: #fff;
+  letter-spacing: .1em;
+  text-decoration: none;
+  width: 88px;
+  position: relative;
+  font-size: 0.9rem;
+  z-index: 10000;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.scrollbutton a span {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: 50%;
+  margin-left: -22px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+  bottom: -50px;
+}
+
+.scrollbutton a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+#hole article .scrollbutton a {
+  margin: 0 auto;
+}
+#hole article .last a span::after {
+  -webkit-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+  top: 68%;
+}
+
+.footer {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  box-sizing: content-box;
+  font-size: 1.2em;
+  margin: 0 auto;
+  z-index: 1000;
+}
+.footer h1 {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 60px;
+  color: #fff;
+  padding: 10px 0 0 0;
+  letter-spacing: 3px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #080808, 3px 3px 0 rgba(243, 241, 237, 0.5), 4px 4px 0 rgba(243, 241, 237, 0.5), 0 0 25px rgba(243, 241, 237, 0.5);
+}
+.footer h2 {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  padding: 20px 0 10px 0;
+  letter-spacing: 3px;
+  font-weight: 500;
+  text-align: center;
+}
+.footer article {
+  max-width: 600px;
+  columns: 2;
+  margin: 0 0 2rem 0;
+  width: 80%;
+  margin: 2em auto 5em;
+  text-align: left;
+}
+@media screen and (max-width: 600px) {
+  .footer article {
+    width: 90%;
+    columns: 1;
+    margin: 2em auto 5em;
+    text-align: left;
+  }
+}
+.footer a {
+  color: #f3f1c8;
+  text-decoration: none;
+}
+.footer a:hover,
+.footer a:focus {
+  color: adjust-hue #f3f1c8, 50%;
+  text-decoration: underline;
+}
+.footer ul {
+  text-align: center;
+}
+
+.lowzed {
+  z-index: 9 !important;
+}
